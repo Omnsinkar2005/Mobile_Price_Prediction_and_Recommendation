@@ -1,0 +1,159 @@
+.about-container {
+  min-height: 100vh;
+  padding: 100px 20px 40px;
+}
+
+.about-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-section {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.about-section h2 {
+  color: #1e293b;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  color: #475569;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.objectives-section,
+.methodology-section,
+.team-section,
+.tech-stack {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.objectives-section h2,
+.methodology-section h2,
+.team-section h2,
+.tech-stack h2 {
+  color: #1e293b;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.section-icon {
+  color: #667eea;
+}
+
+.objectives-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.objective-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 30px;
+  border-radius: 16px;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.objective-card:hover {
+  transform: translateY(-5px);
+}
+
+.objective-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.objective-card p {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+}
+
+.algorithm-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.algorithm-card {
+  border: 2px solid #e2e8f0;
+  padding: 30px;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.algorithm-card:hover {
+  border-color: #667eea;
+  box-shadow: 0 5px 20px rgba(102, 126, 234, 0.2);
+}
+
+.algorithm-card h3 {
+  color: #667eea;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.algorithm-card p {
+  color: #475569;
+  line-height: 1.7;
+}
+
+.team-description {
+  color: #475569;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.tech-tag {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: transform 0.3s ease;
+}
+
+.tech-tag:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .about-section,
+  .objectives-section,
+  .methodology-section,
+  .team-section,
+  .tech-stack {
+    padding: 25px;
+  }
+
+  .objectives-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .algorithm-cards {
+    grid-template-columns: 1fr;
+  }
+}
