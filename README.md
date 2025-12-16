@@ -1,4 +1,4 @@
-# Mobile_Price_Prediction_and_Recommendation
+# Mobile Price Prediction and Recommendation
 
 ## Problem Statement
 Predict mobile price in India and recommend products using FP-Growth.
